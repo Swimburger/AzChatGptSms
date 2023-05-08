@@ -25,8 +25,8 @@ builder.Services
 builder.Services.AddAzureClients(clientBuilder =>
 {
     clientBuilder.AddOpenAIClient(
-        new Uri(builder.Configuration["OpenAI:Endpoint"]),
-        new AzureKeyCredential(builder.Configuration["OpenAI:ApiKey"])
+        new Uri(builder.Configuration["Azure:OpenAI:Endpoint"]),
+        new AzureKeyCredential(builder.Configuration["Azure:OpenAI:ApiKey"])
     );
 });
 

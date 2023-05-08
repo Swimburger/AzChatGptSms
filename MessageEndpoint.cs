@@ -58,7 +58,7 @@ public static class MessageEndpoint
             openAiClient,
             userId,
             messages,
-            configuration["OpenAI:ModelName"],
+            configuration["Azure:OpenAI:ModelName"],
             cancellationToken
         );
 
